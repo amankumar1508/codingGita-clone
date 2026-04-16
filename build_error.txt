@@ -1,0 +1,29 @@
+
+> my-project@0.0.0 build
+> vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 1769 modules transformed.
+[31m✗[39m Build failed in 2.64s
+[31merror during build:
+[31msrc/components/Navbar.jsx (3:9): "getInitials" is not exported by "src/utils/getInitials.js", imported by "src/components/Navbar.jsx".[31m
+file: [36mD:/project/Project-Clone/codingGita-clone/my-project/src/components/Navbar.jsx:3:9[31m
+[33m
+1: import React, { useState } from "react";
+2: import { Menu, X, ChevronDown, Settings } from "lucide-react";
+3: import { getInitials } from "../utils/getInitials";
+            ^
+4: 
+5: export default function Navbar() {
+[31m
+    at getRollupError (file:///D:/project/Project-Clone/codingGita-clone/my-project/node_modules/rollup/dist/es/shared/parseAst.js:402:41)
+    at error (file:///D:/project/Project-Clone/codingGita-clone/my-project/node_modules/rollup/dist/es/shared/parseAst.js:398:42)
+    at Module.error (file:///D:/project/Project-Clone/codingGita-clone/my-project/node_modules/rollup/dist/es/shared/node-entry.js:17040:16)
+    at Module.traceVariable (file:///D:/project/Project-Clone/codingGita-clone/my-project/node_modules/rollup/dist/es/shared/node-entry.js:17452:29)
+    at ModuleScope.findVariable (file:///D:/project/Project-Clone/codingGita-clone/my-project/node_modules/rollup/dist/es/shared/node-entry.js:15070:39)
+    at FunctionScope.findVariable (file:///D:/project/Project-Clone/codingGita-clone/my-project/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at FunctionBodyScope.findVariable (file:///D:/project/Project-Clone/codingGita-clone/my-project/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at Identifier.bind (file:///D:/project/Project-Clone/codingGita-clone/my-project/node_modules/rollup/dist/es/shared/node-entry.js:5447:40)
+    at CallExpression.bind (file:///D:/project/Project-Clone/codingGita-clone/my-project/node_modules/rollup/dist/es/shared/node-entry.js:2829:23)
+    at CallExpression.bind (file:///D:/project/Project-Clone/codingGita-clone/my-project/node_modules/rollup/dist/es/shared/node-entry.js:12179:15)[39m
